@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABHotels-Crud", "Hotels-Crud\ABHotels-Crud.csproj", "{365861EE-D73D-4025-B566-C6A8DDD62E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{490B4B0E-B5F9-4154-9619-4B8F0F4DD12F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{80AAA9B7-EDBD-44EB-AAD2-67199FA13C9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{365861EE-D73D-4025-B566-C6A8DDD62E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365861EE-D73D-4025-B566-C6A8DDD62E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365861EE-D73D-4025-B566-C6A8DDD62E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365861EE-D73D-4025-B566-C6A8DDD62E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490B4B0E-B5F9-4154-9619-4B8F0F4DD12F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490B4B0E-B5F9-4154-9619-4B8F0F4DD12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490B4B0E-B5F9-4154-9619-4B8F0F4DD12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490B4B0E-B5F9-4154-9619-4B8F0F4DD12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80AAA9B7-EDBD-44EB-AAD2-67199FA13C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80AAA9B7-EDBD-44EB-AAD2-67199FA13C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80AAA9B7-EDBD-44EB-AAD2-67199FA13C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80AAA9B7-EDBD-44EB-AAD2-67199FA13C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39A36CF8-00AA-4BF1-9C14-4BC79D7CF51C}
+	EndGlobalSection
+EndGlobal
