@@ -19,24 +19,24 @@ namespace Hotels_Crud.Controllers
         }
 
         [HttpGet("gethotels")]
-        public IActionResult GetHotels()
+        public async Task<IActionResult> GetHotels()
         {
-            var result = _hotelServices.GetHotels();
+            var result = await _hotelServices.GetHotels();
             return Ok(result);
         }
 
         [HttpPost("addhotel")]
-        public IActionResult AddHotel([FromBody] hotel newHotel)
+        public async Task<IActionResult> AddHotel([FromBody] hotel newHotel)
         {
-            _hotelServices.AddHotel(newHotel);
+            await _hotelServices.AddHotel(newHotel);
             Console.WriteLine(newHotel.id + " " + newHotel.name);
             return Ok(new { Message = "Hotel added successfully!" });
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateHotel(string id, [FromBody] hotel updateHotel)
+        public async Task<IActionResult> UpdateHotel(string id, [FromBody] hotel updateHotel)
         {
-            var result = _hotelServices.UpdateHotel(id, updateHotel);
+            var result = await _hotelServices.UpdateHotel(id, updateHotel);
             if (!result)
             {
                 return NotFound("Hotel not found!");
@@ -45,14 +45,22 @@ namespace Hotels_Crud.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteHotel(string id)
+        public async Task<IActionResult> DeleteHotel(string id)
         {
-            var result = _hotelServices.DeleteHotel(id);
+            var result = await _hotelServices.DeleteHotel(id);
             if (!result)
             {
                 return NotFound("Hotel not found...");
             }
             return Ok("Hotel delete Successfully...");
+        }
+
+        [HttpGet("{cityName}")]
+        public async Task<IActionResult> SearchHotelsByCity(string cityName)
+        {
+            List<hotel> result = await _hotelServices.SearchHotelsByCity(cityName);
+            if (result.Count == 0) return NotFound("Hotels not found");
+            return Ok(result);
         }
     }
 }

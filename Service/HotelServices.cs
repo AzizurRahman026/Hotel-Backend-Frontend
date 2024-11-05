@@ -1,67 +1,63 @@
 ﻿using Entities;
+using MongoDB.Driver;
+using Data;
 
 public interface IHotelServices
 {
-    List<hotel> GetHotels();
-    void AddHotel(hotel obj);
+    Task<List<hotel>> GetHotels();
+    Task AddHotel(hotel obj);
 
-    bool UpdateHotel(string id, hotel updatedHotel);
-    bool DeleteHotel(string id);
+    Task<bool> UpdateHotel(string id, hotel updatedHotel);
+    Task<bool> DeleteHotel(string id);
     // add search hotel function...
+    Task<List<hotel>> SearchHotelsByCity(string cityName);
 }
 
 namespace Service
 {
     public class HotelServices : IHotelServices
     {
-        private List<hotel> _hotels = new List<hotel>();
+        private readonly MongoDbContext _context;
 
-        public List<hotel> GetHotels()
+        public HotelServices(MongoDbContext context)
         {
-            return _hotels;
+            _context = context;
         }
 
-        public void AddHotel(hotel obj)
+        public async Task<List<hotel>> GetHotels()
         {
-            _hotels.Add(obj);
+            return await _context.hotel.Find(_ => true).ToListAsync();
         }
 
-        public bool UpdateHotel(string id, hotel updatedHotel)
+        public async Task AddHotel(hotel obj)
         {
-            int Id = Int32.Parse(id), len = _hotels.Count;
-            int idx = len;
-            for (int i = 0; i < len; ++i)
-            {
-                if (_hotels[i].id == Id) idx = i;
-            }
-
-            if (idx < len)
-            {
-                _hotels[idx].name = updatedHotel.name;
-                _hotels[idx].city = updatedHotel.city;
-                return true;
-            }
-            return false;
+            await _context.hotel.InsertOneAsync(obj);
         }
 
-        public bool DeleteHotel(string id)
+        public async Task<bool> UpdateHotel(string id, hotel updatedHotel)
         {
-            int Id = Int32.Parse(id), len = _hotels.Count;
-            var idx = _hotels.Count;
-            for (int i = 0; i < len; ++i)
-            {
-                if (_hotels[i].id == Id)
-                {
-                    idx = i;
-                }
-            }
-
-            if (idx < len)
-            {
-                _hotels.RemoveAt(idx);
-                return true;
-            }
-            return false;
+            int Id = Int32.Parse(id);
+            var filter = Builders<hotel>.Filter.Eq(h => h.id, Id);
+            var updateResult = await _context.hotel.ReplaceOneAsync(filter, updatedHotel);
+            return updateResult.ModifiedCount > 0;
         }
+
+
+        // Delete a hotel by ID from the database
+        public async Task<bool> DeleteHotel(string id)
+        {
+            int Id = Int32.Parse(id);
+            var filter = Builders<hotel>.Filter.Eq(h => h.id, Id);
+            var deleteResult = await _context.hotel.DeleteOneAsync(filter);
+            return deleteResult.DeletedCount > 0;
+        }
+
+        // Search hotels by city name in the database
+        public async Task<List<hotel>> SearchHotelsByCity(string cityName)
+        {
+            var filter = Builders<hotel>.Filter.Eq(h => h.city, cityName);
+            return await _context.hotel.Find(filter).ToListAsync();
+        }
+
     }
 }

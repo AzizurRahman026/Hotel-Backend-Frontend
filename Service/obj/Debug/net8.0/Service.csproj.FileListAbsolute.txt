@@ -14,3 +14,5 @@ C:\Users\azizur\Learn\dotNet\Hotels-Crud\Service\obj\Debug\net8.0\Service.dll
 C:\Users\azizur\Learn\dotNet\Hotels-Crud\Service\obj\Debug\net8.0\refint\Service.dll
 C:\Users\azizur\Learn\dotNet\Hotels-Crud\Service\obj\Debug\net8.0\Service.pdb
 C:\Users\azizur\Learn\dotNet\Hotels-Crud\Service\obj\Debug\net8.0\ref\Service.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Service\bin\Debug\net8.0\Data.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Service\bin\Debug\net8.0\Data.pdb

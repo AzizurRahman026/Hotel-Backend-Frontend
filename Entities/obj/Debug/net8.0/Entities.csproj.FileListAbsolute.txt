@@ -10,3 +10,4 @@ C:\Users\azizur\Learn\dotNet\Hotels-Crud\Entities\obj\Debug\net8.0\Entities.dll
 C:\Users\azizur\Learn\dotNet\Hotels-Crud\Entities\obj\Debug\net8.0\refint\Entities.dll
 C:\Users\azizur\Learn\dotNet\Hotels-Crud\Entities\obj\Debug\net8.0\Entities.pdb
 C:\Users\azizur\Learn\dotNet\Hotels-Crud\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache

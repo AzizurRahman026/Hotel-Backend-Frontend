@@ -30,3 +30,11 @@ C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\obj\Debug\net8.0\refint\ABH
 C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\obj\Debug\net8.0\ABHotels-Crud.pdb
 C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\obj\Debug\net8.0\ABHotels-Crud.genruntimeconfig.cache
 C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\obj\Debug\net8.0\ref\ABHotels-Crud.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\bin\Debug\net8.0\DnsClient.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\bin\Debug\net8.0\Snappier.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\bin\Debug\net8.0\Data.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\Hotels-Crud\bin\Debug\net8.0\Data.pdb
