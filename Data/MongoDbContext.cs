@@ -13,6 +13,7 @@ namespace Data
             _database = client.GetDatabase(databaseName);
         }
 
-        public IMongoCollection<hotel> hotel => _database.GetCollection<hotel>("hotel");
+        public IMongoCollection<Hotel> hotel => _database.GetCollection<Hotel>("hotel");
+        public IMongoCollection<User> user => _database.GetCollection<User>("user");
     }
 }

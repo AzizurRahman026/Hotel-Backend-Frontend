@@ -235,6 +235,16 @@
         "runtime": {
           "bin/placeholder/Entities.dll": {}
         }
+      },
+      "IServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/IServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IServices.dll": {}
+        }
       }
     }
   },
@@ -627,12 +637,18 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "IServices/1.0.0": {
+      "type": "project",
+      "path": "../IServices/IServices.csproj",
+      "msbuildProject": "../IServices/IServices.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Data >= 1.0.0",
       "Entities >= 1.0.0",
+      "IServices >= 1.0.0",
       "MongoDB.Driver >= 3.0.0"
     ]
   },
@@ -668,6 +684,9 @@
             },
             "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\IServices\\IServices.csproj": {
+              "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\IServices\\IServices.csproj"
             }
           }
         }

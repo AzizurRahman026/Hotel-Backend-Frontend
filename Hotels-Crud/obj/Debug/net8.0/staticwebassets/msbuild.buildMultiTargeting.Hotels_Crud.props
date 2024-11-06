@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Hotels_Crud.props" />
+</Project>

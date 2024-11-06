@@ -1,6 +1,6 @@
 ﻿namespace Entities
 {
-    public class hotel
+    public class Hotel
     {
         public int? id { get; set; }
         public string? name { get; set; }

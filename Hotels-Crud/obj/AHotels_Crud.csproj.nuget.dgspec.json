@@ -1,0 +1,270 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Hotels-Crud\\AHotels_Crud.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\azizur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\azizur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\azizur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\azizur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Hotels-Crud\\AHotels_Crud.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Hotels-Crud\\AHotels_Crud.csproj",
+        "projectName": "AHotels_Crud",
+        "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Hotels-Crud\\AHotels_Crud.csproj",
+        "packagesPath": "C:\\Users\\azizur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Hotels-Crud\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\azizur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Data\\Data.csproj"
+              },
+              "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Service\\Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\azizur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\azizur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Data\\Data.csproj"
+              },
+              "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

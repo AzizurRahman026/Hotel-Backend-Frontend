@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hotels_Crud.Controllers
 {
+
+    [ApiController]
     public class HomeController : Controller
     {
         private readonly IHotelServices _hotelServices;
@@ -26,7 +28,7 @@ namespace Hotels_Crud.Controllers
         }
 
         [HttpPost("addhotel")]
-        public async Task<IActionResult> AddHotel([FromBody] hotel newHotel)
+        public async Task<IActionResult> AddHotel([FromBody] Hotel newHotel)
         {
             await _hotelServices.AddHotel(newHotel);
             Console.WriteLine(newHotel.id + " " + newHotel.name);
@@ -34,7 +36,7 @@ namespace Hotels_Crud.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateHotel(string id, [FromBody] hotel updateHotel)
+        public async Task<IActionResult> UpdateHotel(string id, [FromBody] Hotel updateHotel)
         {
             var result = await _hotelServices.UpdateHotel(id, updateHotel);
             if (!result)
@@ -58,7 +60,7 @@ namespace Hotels_Crud.Controllers
         [HttpGet("{cityName}")]
         public async Task<IActionResult> SearchHotelsByCity(string cityName)
         {
-            List<hotel> result = await _hotelServices.SearchHotelsByCity(cityName);
+            List<Hotel> result = await _hotelServices.SearchHotelsByCity(cityName);
             if (result.Count == 0) return NotFound("Hotels not found");
             return Ok(result);
         }

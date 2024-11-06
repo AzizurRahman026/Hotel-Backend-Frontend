@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q49ofan+oejyK1iQrb6/JHn+AZtsz3bmKSPiariQq4m1ll5K7ets0hCemeOySiJNj85LGMWgdVjhWvan33eY7A==",
+  "dgSpecHash": "op4LUHp25Rz80iQKRrk5qdccARMIqbizAVKw0kPnyaZWjmzWhSc6y2qPkKI4023Yve37ncpbqiODN3XrvHaN2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Hotels-Crud\\ABHotels-Crud.csproj",
+  "projectFilePath": "C:\\Users\\azizur\\Learn\\dotNet\\Hotels-Crud\\Hotels-Crud\\Hotels_Crud.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\azizur\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\azizur\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",

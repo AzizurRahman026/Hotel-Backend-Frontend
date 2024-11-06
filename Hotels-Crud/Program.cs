@@ -1,6 +1,6 @@
 using Data;
+using IServices;
 using MongoDB.Driver;
-
 using Service;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +14,8 @@ builder.Services.AddSingleton<MongoDbContext>(sp =>
 });
 
 builder.Services.AddSingleton<IHotelServices, HotelServices>();
+builder.Services.AddSingleton<IUserServices, UserServices>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 var app = builder.Build();
 
