@@ -1,0 +1,16 @@
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\bin\Debug\net8.0\IServices.deps.json
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\bin\Debug\net8.0\IServices.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\bin\Debug\net8.0\IServices.pdb
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\bin\Debug\net8.0\Entities.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\bin\Debug\net8.0\Entities.pdb
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\IServices.csproj.AssemblyReference.cache
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\IServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\IServices.AssemblyInfoInputs.cache
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\IServices.AssemblyInfo.cs
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\IServices.csproj.CoreCompileInputs.cache
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\IServices.sourcelink.json
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\IServices.csproj.CopyComplete
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\IServices.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\refint\IServices.dll
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\IServices.pdb
+C:\Users\azizur\Learn\dotNet\Hotels-Crud\IServices\obj\Debug\net8.0\ref\IServices.dll

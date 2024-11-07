@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using Data;
 using Entities.DTO;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 public interface IUserServices
@@ -11,6 +12,7 @@ public interface IUserServices
     Task<User> RegisterUser(RegisterDTO user);
     Task<bool> UserExist(string username);
     Task<User> Login(LoginDTO loginDto);
+    Task<User> getUser(string userId);
 }
 
 namespace Service
@@ -24,6 +26,19 @@ namespace Service
             _context = context;
         }
 
+        // get user code...
+        public async Task<User> getUser(string userId)
+        {
+            ObjectId id = new ObjectId(userId.ToString());
+            var filter = Builders<User>.Filter.Eq(u => u.Id, id);
+            var user = await _context.user.Find(filter).FirstOrDefaultAsync();
+            return user;
+        }
+
+
+
+
+        // user registration code...
         public async Task<User> RegisterUser(RegisterDTO user)
         {
             using var hmac = new HMACSHA512();
