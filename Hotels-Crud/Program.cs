@@ -7,6 +7,8 @@ using MongoDB.Driver;
 using Service;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors();
 builder.Services.AddControllers();
 
 builder.Services.AddSingleton<MongoDbContext>(sp =>
@@ -36,6 +38,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+
+// Configure the HTTP request pipeline...// Configure CORS first
+app.UseCors(x => x.AllowAnyHeader()
+    .AllowAnyMethod()
+    .WithOrigins("http://localhost:4200", "https://localhost:4200"));
 
 // Enable authentication and authorization middleware
 app.UseAuthentication();
