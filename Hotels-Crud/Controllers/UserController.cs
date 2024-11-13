@@ -75,6 +75,7 @@ namespace Hotels_Crud.Controllers
         [AllowAnonymous]  // Allow anonymous access to login
         public async Task<IActionResult> Login(LoginDTO loginDto)
         {
+            Console.WriteLine(loginDto.username + " | " + loginDto.password);
             if (!await UserExist(loginDto.username))
             {
                 return Unauthorized("Invalid username");

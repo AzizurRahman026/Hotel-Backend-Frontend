@@ -21,7 +21,7 @@ namespace Service
         public string CreateToken(User user)
         {
             var tokenKey = _config["TokenKey"] ?? throw new Exception("Cannot access tokenKey from appsettings...");
-            if (tokenKey.Length < 32)
+            if (tokenKey.Length < 64)
             {
                 throw new Exception("Your tokenKey needs to be longer...");
             }

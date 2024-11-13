@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hotels_Crud.Controllers
 {
-
     [ApiController]
     public class HomeController : Controller
     {
@@ -17,12 +16,14 @@ namespace Hotels_Crud.Controllers
         [HttpGet("/")]
         public IActionResult Index()
         {
-            return Ok("Alhamdulillah! Home page working...");
+            Console.WriteLine("ok now hitting this root api...");
+            return Ok( new {Message = "Home page"});
         }
 
         [HttpGet("gethotels")]
         public async Task<IActionResult> GetHotels()
         {
+            Console.WriteLine("ok now hitting this gethotel api...");
             var result = await _hotelServices.GetHotels();
             return Ok(result);
         }

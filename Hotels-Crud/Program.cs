@@ -8,7 +8,26 @@ using Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddCors();
+// Add CORS policy
+/*builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200") // Allow requests from Angular frontend (running on port 4200)
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});*/
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
 builder.Services.AddControllers();
 
 builder.Services.AddSingleton<MongoDbContext>(sp =>
@@ -38,11 +57,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+app.UseCors("AllowAll");
 
-// Configure the HTTP request pipeline...// Configure CORS first
-app.UseCors(x => x.AllowAnyHeader()
-    .AllowAnyMethod()
-    .WithOrigins("http://localhost:4200", "https://localhost:4200"));
+// app.UseCors("AllowSpecificOrigin");
 
 // Enable authentication and authorization middleware
 app.UseAuthentication();
